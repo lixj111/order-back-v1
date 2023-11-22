@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/coffee_order?useSSL=false&serverTimezone=UTC
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+#  main:
+#    banner-mode: off # 关闭SpringBoot启动图标(banner)
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印SQL日志到控制台
+  global-config:
+    banner: off # 关闭mybatisplus启动图标
+server:
+  port: 8888
+#    开启日志功能性能就会受到影响，调试完后记得关闭
