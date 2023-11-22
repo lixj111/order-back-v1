@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ApiResult<T> {
-    private List<T> message;
+    private T message;
     private Meta meta;
 
     // 内部 Meta 类

@@ -42,19 +42,8 @@ class OrderBackV1ApplicationTests {
 	private GoodsDetailServiceImpl goodsDetailService;
 
 	@Test
-	void contextLoads() {
-	}
-
-	@Test
-	void testConnection(){
-		List<User> list = userMapper.selectList(null);
-//		List<User> list = userService.list();
-		System.out.println(list);
-	}
-
-	@Test
 	void testSwiperData(){
-		ApiResult<SwiperData> swiperData = homeController.getSwiperData();
+		ApiResult<List<SwiperData>> swiperData = homeController.getSwiperData();
 		System.out.println(swiperData);
 	}
 

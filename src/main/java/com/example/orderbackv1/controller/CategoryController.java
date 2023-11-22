@@ -25,7 +25,7 @@ public class CategoryController {
     private GoodsDetailServiceImpl goodsDetailService;
 
     @GetMapping
-    public ApiResult<Category> get_all_categories(){
+    public ApiResult<List<Category>> get_all_categories(){
         LambdaQueryWrapper<Category> lqw = new LambdaQueryWrapper<>();
         lqw.eq(Category::getCatDeleted, 0);
         List<Category> list = categoryService.list(lqw);

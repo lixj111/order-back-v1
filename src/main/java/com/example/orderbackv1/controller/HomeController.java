@@ -14,7 +14,7 @@ import java.util.List;
 public class HomeController {
 
     @GetMapping("/swiperdata")
-    public ApiResult<SwiperData> getSwiperData(){
+    public ApiResult<List<SwiperData>> getSwiperData(){
         List<SwiperData> swiperDataList = new ArrayList<>();
         swiperDataList.add(new SwiperData("https://api-demo.example.com/static/swiperdata1.jpg",""));
         swiperDataList.add(new SwiperData("https://api-demo.example.com/static/swiperdata2.jpg",""));
