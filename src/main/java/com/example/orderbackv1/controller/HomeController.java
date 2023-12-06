@@ -16,9 +16,9 @@ public class HomeController {
     @GetMapping("/swiperdata")
     public ApiResult<List<SwiperData>> getSwiperData(){
         List<SwiperData> swiperDataList = new ArrayList<>();
-        swiperDataList.add(new SwiperData("https://api-demo.example.com/static/swiperdata1.jpg",""));
-        swiperDataList.add(new SwiperData("https://api-demo.example.com/static/swiperdata2.jpg",""));
-        swiperDataList.add(new SwiperData("https://api-demo.example.com/static/swiperdata3.jpg",""));
+        swiperDataList.add(new SwiperData("http://localhost:8888/static/swiperdata1.jpg",""));
+        swiperDataList.add(new SwiperData("http://localhost:8888/static/swiperdata2.jpg",""));
+        swiperDataList.add(new SwiperData("http://localhost:8888/static/swiperdata3.jpg",""));
         return new ApiResult<>(swiperDataList,new ApiResult.Meta("获取成功",200));
     }
 

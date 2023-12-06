@@ -16,4 +16,5 @@ mybatis-plus:
     banner: off # 关闭mybatisplus启动图标
 server:
   port: 8888
+  address: 0.0.0.0
 #    开启日志功能性能就会受到影响，调试完后记得关闭
